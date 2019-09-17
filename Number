@@ -1,0 +1,21 @@
+static void Main(string[] args)
+        {
+            int number = 0;
+            
+            string numberString = "1234";
+            if (int.TryParse(numberString, out number))
+            {
+                Console.WriteLine("Conversion succeeded, number now equals 1234.");
+
+                int n = number * number;
+
+                Console.WriteLine(n.ToString());
+            }
+            else
+            {
+                Console.WriteLine("Conversion failed, number now equals 0.");
+
+                Console.WriteLine(number.ToString());
+            }
+            
+            Console.ReadLine();
