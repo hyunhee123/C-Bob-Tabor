@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            //Multidimensional arrays.
+
+            string[,] names = new string[3, 2];
+            names[0, 0] = "A";
+            names[0, 1] = "b";
+            names[1, 0] = "c";
+            names[1, 1] = "d";
+            
+            Console.WriteLine(names[1, 1]);
+            Console.ReadLine();
+        }
+    }
+}
